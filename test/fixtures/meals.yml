@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  eating_day: 2012-04-19
+  menu_description: MyText
+
+two:
+  eating_day: 2012-04-19
+  menu_description: MyText
