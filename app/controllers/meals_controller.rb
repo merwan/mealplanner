@@ -1,8 +1,10 @@
+require_relative '../../lib/catalog'
+
 class MealsController < ApplicationController
   # GET /meals
   # GET /meals.json
   def index
-    @meals = Meal.all
+    @meals = Catalog.compile(Meal.all)
 
     respond_to do |format|
       format.html # index.html.erb
