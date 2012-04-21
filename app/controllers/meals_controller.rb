@@ -4,11 +4,11 @@ class MealsController < ApplicationController
   # GET /meals
   # GET /meals.json
   def index
-    @meals = Catalog.compile(Meal.all)
+    @catalog = Catalog.new(Meal.all)
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @meals }
+      format.json { render json: @catalog.by_date }
     end
   end
 

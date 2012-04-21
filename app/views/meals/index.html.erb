@@ -9,7 +9,7 @@
     <th></th>
   </tr>
 
-<% @meals.each do |meal| %>
+<% @catalog.by_date.each do |meal| %>
   <tr>
     <td><%= meal.eating_day %></td>
     <td><%= meal.menu_description %></td>

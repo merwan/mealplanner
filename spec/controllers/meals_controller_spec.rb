@@ -10,9 +10,9 @@ describe MealsController do
     it 'uses catalog to get meals' do
       meals, catalog = stub, stub
       Meal.stub!(:all).and_return(meals)
-      Catalog.stub!(:compile).with(meals).and_return(catalog)
+      Catalog.stub!(:new).with(meals).and_return(catalog)
       get :index
-      assigns(:meals).should == catalog
+      assigns(:catalog).should == catalog
     end
   end
 end
