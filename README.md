@@ -14,3 +14,7 @@ FEATURES
 * rate meals
 * indicate what friends like to eat
 
+TODO
+====
+
+https://github.com/merwan/mealplanner/issues
