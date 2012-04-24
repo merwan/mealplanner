@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>MealplannerNew</title>
+    <title>Mealplanner</title>
     <%= stylesheet_link_tag    "application", :media => "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
@@ -14,11 +14,11 @@
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="#">Mealplanner</a>
+          <a class="brand" href="/">Mealplanner</a>
           <div class="nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Home",  "#" %></li>
-              <li><%= link_to "Meals", "#" %></li>
+              <li><%= link_to "Home",  "/" %></li>
+              <li><%= link_to "Meals", "meals" %></li>
             </ul>
           </div>
         </div>
