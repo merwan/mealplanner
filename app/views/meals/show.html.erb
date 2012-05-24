@@ -10,6 +10,11 @@
   <%= @meal.menu_description %>
 </p>
 
+<p>
+  <b>External link:</b>
+  <a href="<%= @meal.link %>">External link</a>
+</p>
+
 
 <%= link_to 'Edit', edit_meal_path(@meal) %> |
 <%= link_to 'Back', meals_path %>
